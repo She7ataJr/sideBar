@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Montserrat", cursive ;
+}
+/* global style */
+.container{
+    width: 90%;
+    margin: auto;
+}
+.pt-5{
+    padding: 20px 0;
+}
+.pt-2{
+    padding: 10px 0;
+}
+.pb-2{
+    padding-bottom: 10px;
+}
+.d-flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.text-center{
+    text-align: center;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.bg-info{
+    background-color: #09c;
+}
+.w-25{
+    width: 25%;
+}
+.w-75{
+    width: 75%;
+}
+.w-100{
+    width: 100%;
+}
+/* Sidebar style */
+.side-bar{
+    width: 272px;
+    background-color: #E2E4E9;
+    /* height: 900px; */
+    border-radius: 9px;
+}
+.side-bar ul{
+    list-style-type: none;
+    margin-left: 9%;
+}
+.side-bar-header{
+    color: #525866;
+    padding:6% 0 ;
+}
+.side-bar-header span{
+    cursor: pointer;
+}
+.divider{
+    padding: 4% 0;
+}
+.link-head{
+   margin: 0 10px;
+   color: #868C98;
+   font-size: 14px;
+   /* font-family: 'Segoe UI', cursive; */
+}
+.links li{
+    padding: 12px 8px;
+}
+.links a{
+    color: #868C98;
+    text-decoration: none;
+}
+.links a:hover{
+    color: black;
+}
+.link-head-2{
+    color: black;
+    margin: 0 10px;
+    font-weight: 600;
+}
+.optional{
+    font-weight: 300;
+    color: #868C98;
+}
+.optional-p{
+    font-weight: 300;
+    color: #868C98;
+    font-size: 14px;
+    margin: 25px;
+    padding-top: 2%;
+}
+/* Form control pure css  */
+.form-control {
+    display: block;
+    width: 90%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+.form-control:disabled, 
+.form-control[readonly] {
+    background-color: #e9ecef;
+    opacity: 1;
+}
+/* end of form control */
+
