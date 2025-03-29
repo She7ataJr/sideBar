@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=AG+FontFamilyName&display=swap'); */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"Montserrat", cursive ;
+    /* font-family:"Montserrat", cursive ; */
+    font-family: 'Inter', system-ui;
 }
 /* global style */
 .container{
@@ -18,6 +20,9 @@
 }
 .pb-2{
     padding-bottom: 10px;
+}
+.pb-5{
+    padding-bottom: 15px;
 }
 .d-flex{
     display: flex;
@@ -43,6 +48,9 @@
 .bg-info{
     background-color: #09c;
 }
+.bg-test{
+    background-color: tomato;
+}
 .w-25{
     width: 25%;
 }
@@ -55,7 +63,7 @@
 /* Sidebar style */
 .side-bar{
     width: 272px;
-    background-color: #E2E4E9;
+    background-color: #FFFFFF;
     /* height: 900px; */
     border-radius: 9px;
 }
@@ -65,29 +73,61 @@
 }
 .side-bar-header{
     color: #525866;
-    padding:6% 0 ;
+   height: 99px;
+   align-items: center;
 }
 .side-bar-header span{
     cursor: pointer;
 }
 .divider{
-    padding: 4% 0;
+    padding: 3% 0;
+}
+.divide{
+
+    height: 1px;
+    background-color: #E2E4E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.side-bar-content-main{
+    height: 446px;
 }
 .link-head{
    margin: 0 10px;
    color: #868C98;
    font-size: 14px;
-   /* font-family: 'Segoe UI', cursive; */
 }
 .links li{
-    padding: 12px 8px;
+    padding: 8px 12px;
+}
+.active{
+    color: black !important;
+    i{
+        color: #375DFB !important;
+    }
+}
+.active::after{
+    content: "";
+    display: inline-block;
+    background-color: #375DFB;
+    height: 16px;
+    width: 4px;
+    position: relative;
+    top: 2px;
+    right: 44%;
+    border-radius: 4px;
 }
 .links a{
-    color: #868C98;
+    color: #525866;
     text-decoration: none;
 }
 .links a:hover{
     color: black;
+    i{
+        color: #375DFB;
+    }
 }
 .link-head-2{
     color: black;
@@ -141,3 +181,25 @@
 }
 /* end of form control */
 
+.other-sidebar-items{
+    height: 203;
+}
+.profile{
+    height: 88px;
+}
+.user-name{
+    font-size: 14px;
+    font-weight: 500;
+    i{
+        color: #35B9E9;
+    }
+}
+.user-mail{
+    color: #525866;
+    font-size: 12px;
+}
+.arrow{
+    i{
+        color: #525866 !important;
+    }
+}
