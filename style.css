@@ -11,6 +11,7 @@
 .container{
     width: 90%;
     margin: auto;
+    height: 100vh;
 }
 .pt-5{
     padding: 20px 0;
@@ -67,16 +68,22 @@
     /* height: 900px; */
     border-radius: 9px;
 }
+.sidebar-content-main{
+   display: flex;
+   flex-direction: column;
+}
+.links{
+    /* overflow-y: auto; */
+}
 .side-bar ul{
     list-style-type: none;
     margin-left: 9%;
 }
 .side-bar-header{
     color: #525866;
-   height: 99px;
    align-items: center;
 }
-.side-bar-header span{
+.side-bar-header .expand-arrow , .arrow{
     cursor: pointer;
 }
 .divider{
@@ -92,7 +99,7 @@
 
 }
 .side-bar-content-main{
-    height: 446px;
+    /* height: 446px; */
 }
 .link-head{
    margin: 0 10px;
@@ -116,7 +123,7 @@
     width: 4px;
     position: relative;
     top: 2px;
-    right: 44%;
+    right: 40%;
     border-radius: 4px;
 }
 .links a{
@@ -181,12 +188,6 @@
 }
 /* end of form control */
 
-.other-sidebar-items{
-    height: 203;
-}
-.profile{
-    height: 88px;
-}
 .user-name{
     font-size: 14px;
     font-weight: 500;
